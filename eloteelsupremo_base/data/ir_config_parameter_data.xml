@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="config_recharge_bonus_percent" model="ir.config_parameter">
+        <field name="key">eloteelsupremo.recharge_bonus_percent</field>
+        <field name="value">10</field>
+    </record>
+    <record id="config_payment_discount_percent" model="ir.config_parameter">
+        <field name="key">eloteelsupremo.payment_discount_percent</field>
+        <field name="value">5</field>
+    </record>
+    <record id="config_payment_points_percent" model="ir.config_parameter">
+        <field name="key">eloteelsupremo.payment_points_percent</field>
+        <field name="value">5</field>
+    </record>
+    <record id="config_qr_token_ttl_minutes" model="ir.config_parameter">
+        <field name="key">eloteelsupremo.qr_token_ttl_minutes</field>
+        <field name="value">5</field>
+    </record>
+</odoo>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="payment_provider_form_supreme" model="ir.ui.view">
+        <field name="name">payment.provider.form.supreme</field>
+        <field name="model">payment.provider</field>
+        <field name="inherit_id" ref="payment_custom.payment_provider_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='custom_mode']" position="attributes">
+                <attribute name="invisible">code != 'custom'</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

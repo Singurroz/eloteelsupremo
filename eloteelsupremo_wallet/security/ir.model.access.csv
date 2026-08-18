@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_supreme_qr_token_user,supreme.qr.token user,model_supreme_qr_token,eloteelsupremo_base.group_supreme_user,1,1,1,0
+access_supreme_qr_token_manager,supreme.qr.token manager,model_supreme_qr_token,eloteelsupremo_base.group_supreme_manager,1,1,1,1
+access_supreme_qr_token_portal,supreme.qr.token portal,model_supreme_qr_token,base.group_portal,1,1,1,0

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_supreme_qr_token_tree" model="ir.ui.view">
+        <field name="name">supreme.qr.token.tree</field>
+        <field name="model">supreme.qr.token</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="create_date"/>
+                <field name="partner_id"/>
+                <field name="token_type"/>
+                <field name="amount"/>
+                <field name="state"/>
+                <field name="expire_at"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_supreme_qr_token_form" model="ir.ui.view">
+        <field name="name">supreme.qr.token.form</field>
+        <field name="model">supreme.qr.token</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="partner_id"/>
+                        <field name="token_type"/>
+                        <field name="amount"/>
+                        <field name="state"/>
+                        <field name="expire_at"/>
+                        <field name="token"/>
+                        <field name="payload"/>
+                        <field name="pos_order_id"/>
+                        <field name="sale_order_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_supreme_qr_token" model="ir.actions.act_window">
+        <field name="name">Tokens QR</field>
+        <field name="res_model">supreme.qr.token</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem
+        id="menu_supreme_qr_tokens"
+        name="Tokens QR"
+        parent="eloteelsupremo_base.menu_supreme_root"
+        action="action_supreme_qr_token"
+        sequence="20"/>
+</odoo>

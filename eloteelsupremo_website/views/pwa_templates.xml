@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="layout_pwa_supreme" inherit_id="web.layout" name="PWA Banco Supremo">
+        <xpath expr="//head" position="inside">
+            <link rel="manifest" href="/eloteelsupremo/manifest.webmanifest"/>
+            <meta name="theme-color" content="#714B67"/>
+            <meta name="apple-mobile-web-app-capable" content="yes"/>
+            <meta name="apple-mobile-web-app-title" content="Banco Supremo"/>
+        </xpath>
+    </template>
+</odoo>

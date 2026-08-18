@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_supreme" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.supreme</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="sale.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//app[@name='sale_management']" position="inside">
+                <block title="Banco Supremo" name="supreme_setting_container">
+                    <setting string="Bono en recarga" help="Porcentaje adicional al comprar Moned Supreme (ej. 10 = paga 300, recibe 330)">
+                        <field name="supreme_recharge_bonus_percent"/>
+                    </setting>
+                    <setting string="Descuento con Moned Supreme" help="Descuento automático al pagar compras con Moned Supreme">
+                        <field name="supreme_payment_discount_percent"/>
+                    </setting>
+                    <setting string="Puntos por compra con Moned Supreme" help="Porcentaje del total que se acredita en Puntos Supremos">
+                        <field name="supreme_payment_points_percent"/>
+                    </setting>
+                    <setting string="Vigencia del QR de pago">
+                        <field name="supreme_qr_token_ttl_minutes"/>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

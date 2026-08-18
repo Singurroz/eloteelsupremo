@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="product_category_supreme" model="product.category">
+        <field name="name">Banco Supremo</field>
+    </record>
+
+    <record id="product_recharge_moned_supreme" model="product.product">
+        <field name="name">Recarga Moned Supreme</field>
+        <field name="list_price">100.0</field>
+        <field name="type">service</field>
+        <field name="sale_ok" eval="True"/>
+        <field name="purchase_ok" eval="False"/>
+        <field name="available_in_pos" eval="True"/>
+        <field name="categ_id" ref="product_category_supreme"/>
+        <field name="taxes_id" eval="[(5,)]"/>
+        <field name="supplier_taxes_id" eval="[(5,)]"/>
+    </record>
+</odoo>

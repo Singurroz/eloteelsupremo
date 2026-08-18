@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="portal_my_home_supreme" inherit_id="portal.portal_my_home" name="Banco Supremo en /my">
+        <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
+            <t t-call="portal.portal_docs_entry">
+                <t t-set="icon" t-value="'/web/static/img/rating.svg'"/>
+                <t t-set="title">Banco Supremo</t>
+                <t t-set="url" t-value="'/my/banco-supremo'"/>
+                <t t-set="text">Moned Supreme, Puntos Supremos y QR de pago</t>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="portal_banco_supremo" name="Portal Banco Supremo">
+        <t t-call="portal.portal_layout">
+            <div class="container o_supreme_portal py-4">
+                <h2>Banco Supremo</h2>
+                <p class="text-muted">
+                    Miembro #<t t-esc="partner.supreme_member_number or '-'"/>
+                </p>
+
+                <div class="row g-3 mb-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Moned Supreme</h5>
+                                <p class="display-6 mb-0">
+                                    <t t-esc="'%.2f' % (moned_card.points if moned_card else 0.0)"/> MS
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Puntos Supremos</h5>
+                                <p class="display-6 mb-0">
+                                    <t t-esc="'%.0f' % (points_card.points if points_card else 0.0)"/> PS
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">QR de identificación</div>
+                            <div class="card-body text-center">
+                                <div id="supreme_identify_qr"
+                                     class="o_supreme_qr_box"
+                                     t-att-data-payload="identify_qr_payload"/>
+                                <p class="small text-muted mt-2">
+                                    Muéstralo al llegar a la sucursal para identificarte.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">QR de pago</div>
+                            <div class="card-body">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">$</span>
+                                    <input type="number" min="1" step="0.01"
+                                           class="form-control" id="supreme_payment_amount"
+                                           placeholder="Monto a pagar"/>
+                                    <button class="btn btn-primary" id="supreme_generate_payment_qr"
+                                            type="button">
+                                        Generar QR
+                                    </button>
+                                </div>
+                                <div id="supreme_payment_qr" class="o_supreme_qr_box text-center d-none"/>
+                                <p id="supreme_payment_qr_error" class="text-danger d-none"/>
+                                <p id="supreme_payment_qr_expire" class="small text-muted d-none"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

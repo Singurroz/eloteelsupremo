@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem
+        id="menu_supreme_root"
+        name="Banco Supremo"
+        sequence="45"
+        groups="eloteelsupremo_base.group_supreme_user"/>
+
+    <menuitem
+        id="menu_supreme_loyalty_programs"
+        name="Programas"
+        parent="menu_supreme_root"
+        action="loyalty.loyalty_program_gift_ewallet_action"
+        sequence="10"/>
+</odoo>
