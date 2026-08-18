@@ -7,7 +7,7 @@
         <field name="partner_id" ref="partner_demo_maria"/>
         <field name="company_id" ref="base.main_company"/>
         <field name="company_ids" eval="[(4, ref('base.main_company'))]"/>
-        <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+        <field name="group_ids" eval="[(6, 0, [ref('base.group_portal')])]"/>
         <field name="tz">America/Mexico_City</field>
     </record>
 
@@ -18,7 +18,7 @@
         <field name="partner_id" ref="partner_demo_jose"/>
         <field name="company_id" ref="base.main_company"/>
         <field name="company_ids" eval="[(4, ref('base.main_company'))]"/>
-        <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+        <field name="group_ids" eval="[(6, 0, [ref('base.group_portal')])]"/>
         <field name="tz">America/Mexico_City</field>
     </record>
 
@@ -29,7 +29,7 @@
         <field name="partner_id" ref="partner_demo_ana"/>
         <field name="company_id" ref="base.main_company"/>
         <field name="company_ids" eval="[(4, ref('base.main_company'))]"/>
-        <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+        <field name="group_ids" eval="[(6, 0, [ref('base.group_portal')])]"/>
         <field name="tz">America/Monterrey</field>
     </record>
 
@@ -40,7 +40,7 @@
         <field name="partner_id" ref="partner_demo_carlos"/>
         <field name="company_id" ref="base.main_company"/>
         <field name="company_ids" eval="[(4, ref('base.main_company'))]"/>
-        <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+        <field name="group_ids" eval="[(6, 0, [ref('base.group_portal')])]"/>
         <field name="tz">America/Mexico_City</field>
     </record>
 
@@ -52,7 +52,7 @@
         <field name="company_id" ref="base.main_company"/>
         <field name="company_ids" eval="[(4, ref('base.main_company'))]"/>
         <field name="tz">America/Mexico_City</field>
-        <field name="groups_id" eval="[(6, 0, [
+        <field name="group_ids" eval="[(6, 0, [
             ref('base.group_user'),
             ref('point_of_sale.group_pos_user'),
             ref('eloteelsupremo_base.group_supreme_user'),

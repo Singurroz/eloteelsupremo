@@ -5,10 +5,6 @@ import { PosStore } from "@point_of_sale/app/services/pos_store";
 import { _t } from "@web/core/l10n/translation";
 import { barcodeReaderService } from "@point_of_sale/app/services/barcode_reader_service";
 
-if (!barcodeReaderService.dependencies.includes("pos")) {
-    barcodeReaderService.dependencies.push("pos");
-}
-
 patch(PosStore.prototype, {
     getSupremeMonedProgram() {
         return this.models["loyalty.program"].find((p) => p.supreme_program_kind === "moned");
@@ -117,10 +113,10 @@ patch(PosStore.prototype, {
 const _barcodeStart = barcodeReaderService.start.bind(barcodeReaderService);
 barcodeReaderService.start = async function (env, deps) {
     const reader = await _barcodeStart(env, deps);
-    const pos = deps.pos;
     const originalScan = reader._scan.bind(reader);
     reader._scan = async function (code) {
         if (code && code.includes("SUPREMO:")) {
+            const pos = env.services.pos;
             if (pos) {
                 await pos.supremeProcessQr(code);
             }

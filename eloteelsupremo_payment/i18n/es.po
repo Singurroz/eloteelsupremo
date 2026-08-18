@@ -23,8 +23,8 @@ msgstr "Elote El Supremo — Pago en sucursal"
 
 #. module: eloteelsupremo_payment
 #: model:ir.module.module,summary:eloteelsupremo_payment.module_eloteelsupremo_payment
-msgid "Proveedor de pago "Recarga / Pago en sucursal" sin pasarela"
-msgstr "Proveedor de pago "Recarga / Pago en sucursal" sin pasarela"
+msgid "Proveedor de pago \"Recarga / Pago en sucursal\" sin pasarela"
+msgstr "Proveedor de pago \"Recarga / Pago en sucursal\" sin pasarela"
 
 #. module: eloteelsupremo_payment
 #: model:ir.model.fields.selection,name:eloteelsupremo_payment.selection__payment_provider__custom_mode__store_payment

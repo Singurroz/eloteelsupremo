@@ -4,7 +4,6 @@
         <field name="name">María Guadalupe Hernández</field>
         <field name="email">maria.demo@eloteelsupremo.mx</field>
         <field name="phone">+52 55 1234 5678</field>
-        <field name="mobile">+52 55 1987 6543</field>
         <field name="street">Av. Insurgentes Sur 1234</field>
         <field name="street2">Col. Del Valle</field>
         <field name="city">Ciudad de México</field>
@@ -19,7 +18,6 @@
         <field name="name">José Luis Ramírez</field>
         <field name="email">jose.demo@eloteelsupremo.mx</field>
         <field name="phone">+52 33 3817 2200</field>
-        <field name="mobile">+52 33 1400 8899</field>
         <field name="street">Av. Chapultepec 450</field>
         <field name="street2">Col. Americana</field>
         <field name="city">Guadalajara</field>
@@ -34,7 +32,6 @@
         <field name="name">Ana Sofía Morales</field>
         <field name="email">ana.demo@eloteelsupremo.mx</field>
         <field name="phone">+52 81 8123 4455</field>
-        <field name="mobile">+52 81 1990 3344</field>
         <field name="street">Av. Constitución 800</field>
         <field name="street2">Centro</field>
         <field name="city">Monterrey</field>

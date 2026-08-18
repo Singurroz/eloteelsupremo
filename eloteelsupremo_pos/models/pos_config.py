@@ -37,6 +37,10 @@ class PosConfig(models.Model):
     @api.model
     def _load_pos_data_fields(self, config):
         fields = super()._load_pos_data_fields(config)
+        if not fields:
+            # Some Odoo 19 branches don't provide a base pos.config field list here.
+            # Fall back to all model fields so the POS frontend gets the keys it expects.
+            fields = list(self._fields)
         for fname in (
             'supreme_qr_enabled',
             'supreme_payment_discount_percent',
