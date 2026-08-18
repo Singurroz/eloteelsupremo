@@ -1,0 +1,50 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* eloteelsupremo
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-18 07:00+0000\n"
+"PO-Revision-Date: 2026-08-18 07:00+0000\n"
+"Last-Translator: Elote El Supremo\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#. module: eloteelsupremo
+#: model:ir.module.module,shortdesc:eloteelsupremo.module_eloteelsupremo
+msgid "Elote El Supremo"
+msgstr "Elote El Supremo"
+
+#. module: eloteelsupremo
+#: model:ir.module.module,summary:eloteelsupremo.module_eloteelsupremo
+msgid "Banco Supremo: Moned Supreme, Puntos Supremos, QR y pago en sucursal"
+msgstr "Banco Supremo: Moned Supreme, Puntos Supremos, QR y pago en sucursal"
+
+#. module: eloteelsupremo
+#: model:ir.module.module,description:eloteelsupremo.module_eloteelsupremo
+msgid ""
+"Ecosistema completo Elote El Supremo para Odoo 19 Community.\n"
+"\n"
+"* Moned Supreme (moneda interna / eWallet)\n"
+"* Puntos Supremos (programa de lealtad)\n"
+"* Recargas en sucursal con bono del 10%\n"
+"* Descuento 5% + puntos 5% al pagar con Moned Supreme\n"
+"* QR de identificación y pago en tienda\n"
+"* Pago en sucursal en eCommerce (sin pasarela)\n"
+"    "
+msgstr ""
+"Ecosistema completo Elote El Supremo para Odoo 19 Community.\n"
+"\n"
+"* Moned Supreme (moneda interna / monedero electrónico)\n"
+"* Puntos Supremos (programa de lealtad)\n"
+"* Recargas en sucursal con bono del 10%\n"
+"* Descuento 5% + puntos 5% al pagar con Moned Supreme\n"
+"* QR de identificación y pago en tienda\n"
+"* Pago en sucursal en eCommerce (sin pasarela)\n"
+"    "

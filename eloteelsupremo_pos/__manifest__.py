@@ -16,6 +16,9 @@
             'eloteelsupremo_pos/static/src/app/supreme_pos_order.js',
         ],
     },
+    'demo': [
+        'demo/pos_payment_method_demo.xml',
+    ],
     'installable': True,
     'application': False,
 }

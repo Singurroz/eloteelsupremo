@@ -1,0 +1,225 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* eloteelsupremo_wallet
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-18 07:00+0000\n"
+"PO-Revision-Date: 2026-08-18 07:00+0000\n"
+"Last-Translator: Elote El Supremo\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#. module: eloteelsupremo_wallet
+#: model:ir.module.module,shortdesc:eloteelsupremo_wallet.module_eloteelsupremo_wallet
+msgid "Elote El Supremo — Moned Supreme (Wallet)"
+msgstr "Elote El Supremo — Moned Supreme (monedero)"
+
+#. module: eloteelsupremo_wallet
+#: model:ir.module.module,summary:eloteelsupremo_wallet.module_eloteelsupremo_wallet
+msgid "Moned Supreme: recargas con bono, tarjeta virtual y tokens QR"
+msgstr "Moned Supreme: recargas con bono, tarjeta virtual y tokens QR"
+
+#. module: eloteelsupremo_wallet
+#: model:ir.model,name:eloteelsupremo_wallet.model_supreme_qr_token
+msgid "Token QR Banco Supremo"
+msgstr "Token QR Banco Supremo"
+
+#. module: eloteelsupremo_wallet
+#: model:ir.model.fields,field_description:eloteelsupremo_wallet.field_supreme_qr_token__partner_id
+msgid "Cliente"
+msgstr "Cliente"
+
+#. module: eloteelsupremo_wallet
+#: model:ir.model.fields,field_description:eloteelsupremo_wallet.field_supreme_qr_token__token_type
+msgid "Tipo"
+msgstr "Tipo"
+
+#. module: eloteelsupremo_wallet
+#: model:ir.model.fields.selection,name:eloteelsupremo_wallet.selection__supreme_qr_token__token_type__identify
+msgid "Identificación"
+msgstr "Identificación"
+
+#. module: eloteelsupremo_wallet
+#: model:ir.model.fields.selection,name:eloteelsupremo_wallet.selection__supreme_qr_token__token_type__payment
+msgid "Pago"
+msgstr "Pago"
+
+#. module: eloteelsupremo_wallet
+#: model:ir.model.fields,field_description:eloteelsupremo_wallet.field_supreme_qr_token__amount
+msgid "Monto"
+msgstr "Monto"
+
+#. module: eloteelsupremo_wallet
+#: model:ir.model.fields,field_description:eloteelsupremo_wallet.field_supreme_qr_token__payload
+msgid "Payload QR"
+msgstr "Carga del QR"
+
+#. module: eloteelsupremo_wallet
+#: model:ir.model.fields.selection,name:eloteelsupremo_wallet.selection__supreme_qr_token__state__active
+msgid "Vigente"
+msgstr "Vigente"
+
+#. module: eloteelsupremo_wallet
+#: model:ir.model.fields.selection,name:eloteelsupremo_wallet.selection__supreme_qr_token__state__reserved
+msgid "Reservado"
+msgstr "Reservado"
+
+#. module: eloteelsupremo_wallet
+#: model:ir.model.fields.selection,name:eloteelsupremo_wallet.selection__supreme_qr_token__state__used
+msgid "Usado"
+msgstr "Usado"
+
+#. module: eloteelsupremo_wallet
+#: model:ir.model.fields.selection,name:eloteelsupremo_wallet.selection__supreme_qr_token__state__expired
+msgid "Expirado"
+msgstr "Expirado"
+
+#. module: eloteelsupremo_wallet
+#: model:ir.model.fields.selection,name:eloteelsupremo_wallet.selection__supreme_qr_token__state__cancelled
+msgid "Cancelado"
+msgstr "Cancelado"
+
+#. module: eloteelsupremo_wallet
+#: model:ir.model.fields,field_description:eloteelsupremo_wallet.field_supreme_qr_token__expire_at
+msgid "Expira"
+msgstr "Expira"
+
+#. module: eloteelsupremo_wallet
+#: model:ir.model.fields,field_description:eloteelsupremo_wallet.field_supreme_qr_token__pos_order_id
+msgid "Orden POS"
+msgstr "Orden de PdV"
+
+#. module: eloteelsupremo_wallet
+#: model:ir.model.fields,field_description:eloteelsupremo_wallet.field_supreme_qr_token__sale_order_id
+msgid "Pedido web"
+msgstr "Pedido web"
+
+#. module: eloteelsupremo_wallet
+#: model:ir.model.fields,field_description:eloteelsupremo_wallet.field_pos_order__supreme_qr_token_id
+msgid "Token QR de pago"
+msgstr "Token QR de pago"
+
+#. module: eloteelsupremo_wallet
+#: model:ir.model.fields,field_description:eloteelsupremo_wallet.field_loyalty_card__supreme_member_number
+msgid "Número de miembro"
+msgstr "Número de miembro"
+
+#. module: eloteelsupremo_wallet
+#: model:ir.model.constraint,message:eloteelsupremo_wallet.constraint_supreme_qr_token_token_unique
+msgid "El token QR debe ser único."
+msgstr "El token QR debe ser único."
+
+#. module: eloteelsupremo_wallet
+#. odoo-python
+#: code:addons/eloteelsupremo_wallet/models/supreme_qr_token.py:0
+msgid "QR inválido."
+msgstr "QR inválido."
+
+#. module: eloteelsupremo_wallet
+#. odoo-python
+#: code:addons/eloteelsupremo_wallet/models/supreme_qr_token.py:0
+msgid "QR no auténtico o alterado."
+msgstr "QR no auténtico o alterado."
+
+#. module: eloteelsupremo_wallet
+#. odoo-python
+#: code:addons/eloteelsupremo_wallet/models/supreme_qr_token.py:0
+msgid "Formato de QR no reconocido."
+msgstr "Formato de QR no reconocido."
+
+#. module: eloteelsupremo_wallet
+#. odoo-python
+#: code:addons/eloteelsupremo_wallet/models/supreme_qr_token.py:0
+msgid "Este QR de pago ya fue utilizado o expiró."
+msgstr "Este QR de pago ya fue utilizado o expiró."
+
+#. module: eloteelsupremo_wallet
+#. odoo-python
+#: code:addons/eloteelsupremo_wallet/models/supreme_qr_token.py:0
+msgid "El QR de pago expiró. Genere uno nuevo."
+msgstr "El QR de pago expiró. Genere uno nuevo."
+
+#. module: eloteelsupremo_wallet
+#. odoo-python
+#: code:addons/eloteelsupremo_wallet/models/supreme_qr_token.py:0
+msgid "El monto del QR de pago debe ser mayor a cero."
+msgstr "El monto del QR de pago debe ser mayor a cero."
+
+#. module: eloteelsupremo_wallet
+#. odoo-python
+#: code:addons/eloteelsupremo_wallet/models/supreme_qr_token.py:0
+msgid "Saldo insuficiente de Moned Supreme."
+msgstr "Saldo insuficiente de Moned Supreme."
+
+#. module: eloteelsupremo_wallet
+#. odoo-python
+#: code:addons/eloteelsupremo_wallet/models/supreme_qr_token.py:0
+msgid "Token de pago no encontrado."
+msgstr "Token de pago no encontrado."
+
+#. module: eloteelsupremo_wallet
+#. odoo-python
+#: code:addons/eloteelsupremo_wallet/models/supreme_qr_token.py:0
+msgid "El monto del QR no coincide."
+msgstr "El monto del QR no coincide."
+
+#. module: eloteelsupremo_wallet
+#. odoo-python
+#: code:addons/eloteelsupremo_wallet/models/supreme_qr_token.py:0
+msgid "Cliente no encontrado."
+msgstr "Cliente no encontrado."
+
+#. module: eloteelsupremo_wallet
+#. odoo-python
+#: code:addons/eloteelsupremo_wallet/models/supreme_qr_token.py:0
+msgid "Cliente %(name)s #%(number)s — Bienvenido. Saldo Moned Supreme: %(moned)s | Puntos Supremos: %(points)s"
+msgstr "Cliente %(name)s #%(number)s — Bienvenido. Saldo Moned Supreme: %(moned)s | Puntos Supremos: %(points)s"
+
+#. module: eloteelsupremo_wallet
+#. odoo-python
+#: code:addons/eloteelsupremo_wallet/models/supreme_qr_token.py:0
+msgid "QR válido: %(amount)s MS para %(name)s. Aplicando pago a la orden…"
+msgstr "QR válido: %(amount)s MS para %(name)s. Aplicando pago a la orden…"
+
+#. module: eloteelsupremo_wallet
+#. odoo-python
+#: code:addons/eloteelsupremo_wallet/models/supreme_qr_token.py:0
+msgid "Pago recibido: %(amount)s MS. Saldo restante: %(balance)s"
+msgstr "Pago recibido: %(amount)s MS. Saldo restante: %(balance)s"
+
+#. module: eloteelsupremo_wallet
+#. odoo-python
+#: code:addons/eloteelsupremo_wallet/models/supreme_qr_token.py:0
+msgid "Tipo de QR no soportado."
+msgstr "Tipo de QR no compatible."
+
+#. module: eloteelsupremo_wallet
+#. odoo-python
+#: code:addons/eloteelsupremo_wallet/models/supreme_qr_token.py:0
+msgid "Pago QR Banco Supremo"
+msgstr "Pago QR Banco Supremo"
+
+#. module: eloteelsupremo_wallet
+#. odoo-python
+#: code:addons/eloteelsupremo_wallet/models/pos_order.py:0
+#: code:addons/eloteelsupremo_wallet/models/sale_order.py:0
+msgid "Bono recarga Moned Supreme (%s%%)"
+msgstr "Bono de recarga Moned Supreme (%s%%)"
+
+#. module: eloteelsupremo_wallet
+#: model:ir.actions.act_window,name:eloteelsupremo_wallet.action_supreme_qr_token
+#: model:ir.ui.menu,name:eloteelsupremo_wallet.menu_supreme_qr_tokens
+msgid "Tokens QR"
+msgstr "Tokens QR"
+
+#. module: eloteelsupremo_wallet
+#: model:ir.cron,name:eloteelsupremo_wallet.ir_cron_supreme_expire_qr_tokens
+msgid "Banco Supremo: expirar tokens QR"
+msgstr "Banco Supremo: expirar tokens QR"

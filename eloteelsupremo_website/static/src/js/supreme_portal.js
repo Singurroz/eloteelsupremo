@@ -3,6 +3,7 @@
 import { Interaction } from '@web/public/interaction';
 import { registry } from '@web/core/registry';
 import { rpc } from '@web/core/network/rpc';
+import { _t } from '@web/core/l10n/translation';
 
 function qrCodeSrc(payload, size = 256) {
     return `/report/barcode/QR/${encodeURIComponent(payload)}?width=${size}&height=${size}`;
@@ -15,11 +16,11 @@ function renderQrBox(container, payload) {
     container.classList.remove('d-none');
     container.innerHTML = `
         <img src="${qrCodeSrc(payload)}"
-             alt="QR Banco Supremo"
+             alt="${_t('QR Banco Supremo')}"
              class="o_supreme_qr_image border rounded bg-white p-2"
              width="256" height="256"/>
         <p class="small text-muted mt-2 mb-0">
-            Escanea con la caja Elote El Supremo
+            ${_t('Escanea con la caja Elote El Supremo')}
         </p>
     `;
 }
@@ -49,7 +50,7 @@ export class SupremePortal extends Interaction {
 
         if (!amount || amount <= 0) {
             if (errorEl) {
-                errorEl.textContent = 'Ingresa un monto válido.';
+                errorEl.textContent = _t('Ingresa un monto válido.');
                 errorEl.classList.remove('d-none');
             }
             return;
@@ -58,7 +59,7 @@ export class SupremePortal extends Interaction {
         const result = await rpc('/my/banco-supremo/qr/payment', { amount });
         if (!result.success) {
             if (errorEl) {
-                errorEl.textContent = result.error || 'No se pudo generar el QR.';
+                errorEl.textContent = result.error || _t('No se pudo generar el QR.');
                 errorEl.classList.remove('d-none');
             }
             return;
@@ -66,7 +67,7 @@ export class SupremePortal extends Interaction {
 
         renderQrBox(qrBox, result.payload);
         if (expireEl && result.expire_at) {
-            expireEl.textContent = `Válido hasta: ${new Date(result.expire_at).toLocaleString()}`;
+            expireEl.textContent = _t('Válido hasta: %s', new Date(result.expire_at).toLocaleString());
             expireEl.classList.remove('d-none');
         }
     }

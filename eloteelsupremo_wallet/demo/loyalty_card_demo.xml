@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!-- María: recargas acumuladas + compras -->
+    <record id="card_moned_maria" model="loyalty.card">
+        <field name="program_id" ref="eloteelsupremo_base.loyalty_program_moned_supreme"/>
+        <field name="partner_id" ref="eloteelsupremo_base.partner_demo_maria"/>
+        <field name="points">550.0</field>
+        <field name="code">MS-DEMO-MARIA</field>
+    </record>
+    <record id="card_puntos_maria" model="loyalty.card">
+        <field name="program_id" ref="eloteelsupremo_base.loyalty_program_puntos_supremos"/>
+        <field name="partner_id" ref="eloteelsupremo_base.partner_demo_maria"/>
+        <field name="points">85.0</field>
+        <field name="code">PS-DEMO-MARIA</field>
+    </record>
+
+    <!-- José: saldo alto -->
+    <record id="card_moned_jose" model="loyalty.card">
+        <field name="program_id" ref="eloteelsupremo_base.loyalty_program_moned_supreme"/>
+        <field name="partner_id" ref="eloteelsupremo_base.partner_demo_jose"/>
+        <field name="points">1200.0</field>
+        <field name="code">MS-DEMO-JOSE</field>
+    </record>
+    <record id="card_puntos_jose" model="loyalty.card">
+        <field name="program_id" ref="eloteelsupremo_base.loyalty_program_puntos_supremos"/>
+        <field name="partner_id" ref="eloteelsupremo_base.partner_demo_jose"/>
+        <field name="points">210.0</field>
+        <field name="code">PS-DEMO-JOSE</field>
+    </record>
+
+    <!-- Ana: recarga inicial $100 + bono 10% -->
+    <record id="card_moned_ana" model="loyalty.card">
+        <field name="program_id" ref="eloteelsupremo_base.loyalty_program_moned_supreme"/>
+        <field name="partner_id" ref="eloteelsupremo_base.partner_demo_ana"/>
+        <field name="points">110.0</field>
+        <field name="code">MS-DEMO-ANA</field>
+    </record>
+    <record id="card_puntos_ana" model="loyalty.card">
+        <field name="program_id" ref="eloteelsupremo_base.loyalty_program_puntos_supremos"/>
+        <field name="partner_id" ref="eloteelsupremo_base.partner_demo_ana"/>
+        <field name="points">0.0</field>
+        <field name="code">PS-DEMO-ANA</field>
+    </record>
+
+    <!-- Carlos: solo puntos, sin monedero -->
+    <record id="card_moned_carlos" model="loyalty.card">
+        <field name="program_id" ref="eloteelsupremo_base.loyalty_program_moned_supreme"/>
+        <field name="partner_id" ref="eloteelsupremo_base.partner_demo_carlos"/>
+        <field name="points">0.0</field>
+        <field name="code">MS-DEMO-CARLOS</field>
+    </record>
+    <record id="card_puntos_carlos" model="loyalty.card">
+        <field name="program_id" ref="eloteelsupremo_base.loyalty_program_puntos_supremos"/>
+        <field name="partner_id" ref="eloteelsupremo_base.partner_demo_carlos"/>
+        <field name="points">45.0</field>
+        <field name="code">PS-DEMO-CARLOS</field>
+    </record>
+
+    <record id="history_maria_recharge" model="loyalty.history">
+        <field name="card_id" ref="card_moned_maria"/>
+        <field name="description">Recarga Moned Supreme (demo)</field>
+        <field name="issued">500.0</field>
+        <field name="used">0.0</field>
+    </record>
+    <record id="history_maria_bonus" model="loyalty.history">
+        <field name="card_id" ref="card_moned_maria"/>
+        <field name="description">Bono recarga Moned Supreme (10%)</field>
+        <field name="issued">50.0</field>
+        <field name="used">0.0</field>
+    </record>
+    <record id="history_maria_points" model="loyalty.history">
+        <field name="card_id" ref="card_puntos_maria"/>
+        <field name="description">Puntos Supremos por compra con Moned Supreme (5%)</field>
+        <field name="issued">85.0</field>
+        <field name="used">0.0</field>
+    </record>
+
+    <record id="history_jose_recharge" model="loyalty.history">
+        <field name="card_id" ref="card_moned_jose"/>
+        <field name="description">Recarga Moned Supreme (demo)</field>
+        <field name="issued">1000.0</field>
+        <field name="used">0.0</field>
+    </record>
+    <record id="history_jose_bonus" model="loyalty.history">
+        <field name="card_id" ref="card_moned_jose"/>
+        <field name="description">Bono recarga Moned Supreme (10%)</field>
+        <field name="issued">200.0</field>
+        <field name="used">0.0</field>
+    </record>
+    <record id="history_jose_points" model="loyalty.history">
+        <field name="card_id" ref="card_puntos_jose"/>
+        <field name="description">Puntos Supremos por compra con Moned Supreme (5%)</field>
+        <field name="issued">210.0</field>
+        <field name="used">0.0</field>
+    </record>
+
+    <record id="history_ana_recharge" model="loyalty.history">
+        <field name="card_id" ref="card_moned_ana"/>
+        <field name="description">Recarga Moned Supreme (demo)</field>
+        <field name="issued">100.0</field>
+        <field name="used">0.0</field>
+    </record>
+    <record id="history_ana_bonus" model="loyalty.history">
+        <field name="card_id" ref="card_moned_ana"/>
+        <field name="description">Bono recarga Moned Supreme (10%)</field>
+        <field name="issued">10.0</field>
+        <field name="used">0.0</field>
+    </record>
+
+    <record id="history_carlos_points" model="loyalty.history">
+        <field name="card_id" ref="card_puntos_carlos"/>
+        <field name="description">Puntos Supremos por compra con Moned Supreme (5%)</field>
+        <field name="issued">45.0</field>
+        <field name="used">0.0</field>
+    </record>
+</odoo>

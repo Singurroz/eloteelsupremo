@@ -1,0 +1,53 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* eloteelsupremo_payment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-18 07:00+0000\n"
+"PO-Revision-Date: 2026-08-18 07:00+0000\n"
+"Last-Translator: Elote El Supremo\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#. module: eloteelsupremo_payment
+#: model:ir.module.module,shortdesc:eloteelsupremo_payment.module_eloteelsupremo_payment
+msgid "Elote El Supremo — Pago en Sucursal"
+msgstr "Elote El Supremo — Pago en sucursal"
+
+#. module: eloteelsupremo_payment
+#: model:ir.module.module,summary:eloteelsupremo_payment.module_eloteelsupremo_payment
+msgid "Proveedor de pago "Recarga / Pago en sucursal" sin pasarela"
+msgstr "Proveedor de pago "Recarga / Pago en sucursal" sin pasarela"
+
+#. module: eloteelsupremo_payment
+#: model:ir.model.fields.selection,name:eloteelsupremo_payment.selection__payment_provider__custom_mode__store_payment
+#: model:payment.method,name:eloteelsupremo_payment.payment_method_store_payment
+msgid "Pago en sucursal"
+msgstr "Pago en sucursal"
+
+#. module: eloteelsupremo_payment
+#: model:payment.provider,name:eloteelsupremo_payment.payment_provider_store_payment
+msgid "Recarga / Pago en sucursal"
+msgstr "Recarga / Pago en sucursal"
+
+#. module: eloteelsupremo_payment
+#: model_terms:payment.provider,pending_msg:eloteelsupremo_payment.payment_provider_store_payment
+msgid "Acude a tu sucursal Elote El Supremo"
+msgstr "Acude a tu sucursal Elote El Supremo"
+
+#. module: eloteelsupremo_payment
+#: model_terms:payment.provider,pending_msg:eloteelsupremo_payment.payment_provider_store_payment
+msgid "Presenta tu número de pedido en caja para completar tu recarga en efectivo."
+msgstr "Presenta tu número de pedido en caja para completar tu recarga en efectivo o transferencia SPEI."
+
+#. module: eloteelsupremo_payment
+#: model_terms:payment.provider,pending_msg:eloteelsupremo_payment.payment_provider_store_payment
+msgid "El saldo se acreditará en tu Moned Supreme al confirmar el pago."
+msgstr "El saldo se acreditará en tu Moned Supreme al confirmar el pago."

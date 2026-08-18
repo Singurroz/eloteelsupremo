@@ -1,0 +1,200 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* eloteelsupremo_base
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-18 07:00+0000\n"
+"PO-Revision-Date: 2026-08-18 07:00+0000\n"
+"Last-Translator: Elote El Supremo\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#. module: eloteelsupremo_base
+#: model:ir.module.module,shortdesc:eloteelsupremo_base.module_eloteelsupremo_base
+msgid "Elote El Supremo — Base"
+msgstr "Elote El Supremo — Base"
+
+#. module: eloteelsupremo_base
+#: model:ir.module.module,summary:eloteelsupremo_base.module_eloteelsupremo_base
+msgid "Configuración base de Banco Supremo: Moned Supreme y Puntos Supremos"
+msgstr "Configuración base de Banco Supremo: Moned Supreme y Puntos Supremos"
+
+#. module: eloteelsupremo_base
+#: model:ir.module.category,name:eloteelsupremo_base.module_category_supreme
+#: model:ir.ui.menu,name:eloteelsupremo_base.menu_supreme_root
+#: model:res.groups.privilege,name:eloteelsupremo_base.res_groups_privilege_supreme
+#: model:product.category,name:eloteelsupremo_base.product_category_supreme
+#: model_terms:ir.ui.view,arch_db:eloteelsupremo_base.res_config_settings_view_form_supreme
+msgid "Banco Supremo"
+msgstr "Banco Supremo"
+
+#. module: eloteelsupremo_base
+#: model:ir.module.category,description:eloteelsupremo_base.module_category_supreme
+msgid "Moned Supreme, Puntos Supremos y QR"
+msgstr "Moned Supreme, Puntos Supremos y QR"
+
+#. module: eloteelsupremo_base
+#: model:res.groups,name:eloteelsupremo_base.group_supreme_user
+msgid "Usuario"
+msgstr "Usuario"
+
+#. module: eloteelsupremo_base
+#: model:res.groups,name:eloteelsupremo_base.group_supreme_manager
+msgid "Administrador"
+msgstr "Administrador"
+
+#. module: eloteelsupremo_base
+#: model:ir.model.fields,field_description:eloteelsupremo_base.field_res_partner__supreme_member_number
+#: model:ir.sequence,name:eloteelsupremo_base.seq_supreme_member
+msgid "Número de miembro Supremo"
+msgstr "Número de miembro Supremo"
+
+#. module: eloteelsupremo_base
+#: model:ir.model.fields,field_description:eloteelsupremo_base.field_loyalty_program__supreme_program_kind
+msgid "Tipo Banco Supremo"
+msgstr "Tipo Banco Supremo"
+
+#. module: eloteelsupremo_base
+#: model:ir.model.fields.selection,name:eloteelsupremo_base.selection__loyalty_program__supreme_program_kind__moned
+#: model:loyalty.program,name:eloteelsupremo_base.loyalty_program_moned_supreme
+#: model:loyalty.reward,description:eloteelsupremo_base.loyalty_reward_moned_supreme
+msgid "Moned Supreme"
+msgstr "Moned Supreme"
+
+#. module: eloteelsupremo_base
+#: model:ir.model.fields.selection,name:eloteelsupremo_base.selection__loyalty_program__supreme_program_kind__puntos
+#: model:loyalty.program,name:eloteelsupremo_base.loyalty_program_puntos_supremos
+msgid "Puntos Supremos"
+msgstr "Puntos Supremos"
+
+#. module: eloteelsupremo_base
+#: model:loyalty.program,portal_point_name:eloteelsupremo_base.loyalty_program_moned_supreme
+msgid "MS"
+msgstr "MS"
+
+#. module: eloteelsupremo_base
+#: model:loyalty.program,portal_point_name:eloteelsupremo_base.loyalty_program_puntos_supremos
+msgid "PS"
+msgstr "PS"
+
+#. module: eloteelsupremo_base
+#: model:loyalty.reward,description:eloteelsupremo_base.loyalty_reward_puntos_supremos
+msgid "Canje Puntos Supremos"
+msgstr "Canje de Puntos Supremos"
+
+#. module: eloteelsupremo_base
+#: model:product.template,name:eloteelsupremo_base.product_recharge_moned_supreme_product_template
+msgid "Recarga Moned Supreme"
+msgstr "Recarga Moned Supreme"
+
+#. module: eloteelsupremo_base
+#: model:ir.model.fields,field_description:eloteelsupremo_base.field_res_config_settings__supreme_recharge_bonus_percent
+msgid "Bono recarga Moned Supreme (%)"
+msgstr "Bono de recarga Moned Supreme (%)"
+
+#. module: eloteelsupremo_base
+#: model:ir.model.fields,field_description:eloteelsupremo_base.field_res_config_settings__supreme_payment_discount_percent
+msgid "Descuento al pagar con Moned Supreme (%)"
+msgstr "Descuento al pagar con Moned Supreme (%)"
+
+#. module: eloteelsupremo_base
+#: model:ir.model.fields,field_description:eloteelsupremo_base.field_res_config_settings__supreme_payment_points_percent
+msgid "Puntos Supremos por compra con Moned Supreme (%)"
+msgstr "Puntos Supremos por compra con Moned Supreme (%)"
+
+#. module: eloteelsupremo_base
+#: model:ir.model.fields,field_description:eloteelsupremo_base.field_res_config_settings__supreme_qr_token_ttl_minutes
+msgid "Vigencia QR de pago (minutos)"
+msgstr "Vigencia del QR de pago (minutos)"
+
+#. module: eloteelsupremo_base
+#: model_terms:ir.ui.view,arch_db:eloteelsupremo_base.res_config_settings_view_form_supreme
+msgid "Bono en recarga"
+msgstr "Bono en recarga"
+
+#. module: eloteelsupremo_base
+#: model_terms:ir.ui.view,arch_db:eloteelsupremo_base.res_config_settings_view_form_supreme
+msgid "Porcentaje adicional al comprar Moned Supreme (ej. 10 = paga 300, recibe 330)"
+msgstr "Porcentaje adicional al comprar Moned Supreme (ej. 10 = paga $300, recibe 330 MS)"
+
+#. module: eloteelsupremo_base
+#: model_terms:ir.ui.view,arch_db:eloteelsupremo_base.res_config_settings_view_form_supreme
+msgid "Descuento con Moned Supreme"
+msgstr "Descuento con Moned Supreme"
+
+#. module: eloteelsupremo_base
+#: model_terms:ir.ui.view,arch_db:eloteelsupremo_base.res_config_settings_view_form_supreme
+msgid "Descuento automático al pagar compras con Moned Supreme"
+msgstr "Descuento automático al pagar compras con Moned Supreme"
+
+#. module: eloteelsupremo_base
+#: model_terms:ir.ui.view,arch_db:eloteelsupremo_base.res_config_settings_view_form_supreme
+msgid "Puntos por compra con Moned Supreme"
+msgstr "Puntos por compra con Moned Supreme"
+
+#. module: eloteelsupremo_base
+#: model_terms:ir.ui.view,arch_db:eloteelsupremo_base.res_config_settings_view_form_supreme
+msgid "Porcentaje del total que se acredita en Puntos Supremos"
+msgstr "Porcentaje del total que se acredita en Puntos Supremos"
+
+#. module: eloteelsupremo_base
+#: model_terms:ir.ui.view,arch_db:eloteelsupremo_base.res_config_settings_view_form_supreme
+msgid "Vigencia del QR de pago"
+msgstr "Vigencia del QR de pago"
+
+#. module: eloteelsupremo_base
+#: model:ir.ui.menu,name:eloteelsupremo_base.menu_supreme_loyalty_programs
+msgid "Programas"
+msgstr "Programas"
+
+#. module: eloteelsupremo_base
+#: model:product.category,name:eloteelsupremo_base.product_category_elotes
+msgid "Elotes y esquites"
+msgstr "Elotes y esquites"
+
+#. module: eloteelsupremo_base
+#: model:product.template,name:eloteelsupremo_base.product_elote_clasico_product_template
+msgid "Elote clásico"
+msgstr "Elote clásico"
+
+#. module: eloteelsupremo_base
+#: model:product.template,name:eloteelsupremo_base.product_elote_supremo_product_template
+msgid "Elote Supremo"
+msgstr "Elote Supremo"
+
+#. module: eloteelsupremo_base
+#: model:product.template,name:eloteelsupremo_base.product_esquite_product_template
+msgid "Esquite"
+msgstr "Esquite"
+
+#. module: eloteelsupremo_base
+#: model:product.template,name:eloteelsupremo_base.product_agua_jamaica_product_template
+msgid "Agua de jamaica"
+msgstr "Agua de jamaica"
+
+#. module: eloteelsupremo_base
+#: model:product.template,description_sale:eloteelsupremo_base.product_elote_clasico_product_template
+msgid "Elote con mayonesa, queso y chile. Precio demo MXN."
+msgstr "Elote con mayonesa, queso y chile. Precio demo MXN."
+
+#. module: eloteelsupremo_base
+#: model:product.template,description_sale:eloteelsupremo_base.product_elote_supremo_product_template
+msgid "Elote especial de la casa con toppings extra."
+msgstr "Elote especial de la casa con toppings extra."
+
+#. module: eloteelsupremo_base
+#: model:product.template,description_sale:eloteelsupremo_base.product_esquite_product_template
+msgid "Esquite en vaso con queso, mayonesa y limón."
+msgstr "Esquite en vaso con queso, mayonesa y limón."
+
+#. module: eloteelsupremo_base
+#: model:product.template,description_sale:eloteelsupremo_base.product_agua_jamaica_product_template
+msgid "Agua fresca de jamaica, 500 ml."
+msgstr "Agua fresca de jamaica, 500 ml."

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="partner_demo_maria" model="res.partner">
+        <field name="name">María Guadalupe Hernández</field>
+        <field name="email">maria.demo@eloteelsupremo.mx</field>
+        <field name="phone">+52 55 1234 5678</field>
+        <field name="mobile">+52 55 1987 6543</field>
+        <field name="street">Av. Insurgentes Sur 1234</field>
+        <field name="street2">Col. Del Valle</field>
+        <field name="city">Ciudad de México</field>
+        <field name="zip">03100</field>
+        <field name="country_id" ref="base.mx"/>
+        <field name="tz">America/Mexico_City</field>
+        <field name="customer_rank">1</field>
+        <field name="comment">Cliente demo Banco Supremo — recarga frecuente en sucursal CDMX.</field>
+    </record>
+
+    <record id="partner_demo_jose" model="res.partner">
+        <field name="name">José Luis Ramírez</field>
+        <field name="email">jose.demo@eloteelsupremo.mx</field>
+        <field name="phone">+52 33 3817 2200</field>
+        <field name="mobile">+52 33 1400 8899</field>
+        <field name="street">Av. Chapultepec 450</field>
+        <field name="street2">Col. Americana</field>
+        <field name="city">Guadalajara</field>
+        <field name="zip">44160</field>
+        <field name="country_id" ref="base.mx"/>
+        <field name="tz">America/Mexico_City</field>
+        <field name="customer_rank">1</field>
+        <field name="comment">Cliente demo con saldo alto de Moned Supreme.</field>
+    </record>
+
+    <record id="partner_demo_ana" model="res.partner">
+        <field name="name">Ana Sofía Morales</field>
+        <field name="email">ana.demo@eloteelsupremo.mx</field>
+        <field name="phone">+52 81 8123 4455</field>
+        <field name="mobile">+52 81 1990 3344</field>
+        <field name="street">Av. Constitución 800</field>
+        <field name="street2">Centro</field>
+        <field name="city">Monterrey</field>
+        <field name="zip">64000</field>
+        <field name="country_id" ref="base.mx"/>
+        <field name="tz">America/Monterrey</field>
+        <field name="customer_rank">1</field>
+        <field name="comment">Cliente demo recién afiliada — recarga inicial de $100.</field>
+    </record>
+
+    <record id="partner_demo_carlos" model="res.partner">
+        <field name="name">Carlos Eduardo Pérez</field>
+        <field name="email">carlos.demo@eloteelsupremo.mx</field>
+        <field name="phone">+52 222 246 1100</field>
+        <field name="street">Blvd. 5 de Mayo 210</field>
+        <field name="city">Puebla</field>
+        <field name="zip">72000</field>
+        <field name="country_id" ref="base.mx"/>
+        <field name="tz">America/Mexico_City</field>
+        <field name="customer_rank">1</field>
+        <field name="comment">Cliente demo con Puntos Supremos y sin saldo de monedero.</field>
+    </record>
+</odoo>

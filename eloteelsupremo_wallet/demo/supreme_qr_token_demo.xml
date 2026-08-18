@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="qr_token_demo_maria_identify" model="supreme.qr.token">
+        <field name="partner_id" ref="eloteelsupremo_base.partner_demo_maria"/>
+        <field name="token_type">identify</field>
+        <field name="token">demo-identify-maria</field>
+        <field name="payload">SUPREMO:ID:DEMO:MARIA</field>
+        <field name="state">active</field>
+        <field name="amount">0.0</field>
+    </record>
+
+    <record id="qr_token_demo_maria_payment" model="supreme.qr.token">
+        <field name="partner_id" ref="eloteelsupremo_base.partner_demo_maria"/>
+        <field name="token_type">payment</field>
+        <field name="token">demo-pay-maria-65</field>
+        <field name="payload">SUPREMO:PAY:DEMO:65:demo-pay-maria-65</field>
+        <field name="state">active</field>
+        <field name="amount">65.0</field>
+        <field name="expire_at" eval="(datetime.now() + timedelta(minutes=30)).strftime('%Y-%m-%d %H:%M:%S')"/>
+    </record>
+
+    <record id="qr_token_demo_jose_used" model="supreme.qr.token">
+        <field name="partner_id" ref="eloteelsupremo_base.partner_demo_jose"/>
+        <field name="token_type">payment</field>
+        <field name="token">demo-pay-jose-used</field>
+        <field name="payload">SUPREMO:PAY:DEMO:90:demo-pay-jose-used</field>
+        <field name="state">used</field>
+        <field name="amount">90.0</field>
+        <field name="expire_at" eval="(datetime.now() - timedelta(hours=2)).strftime('%Y-%m-%d %H:%M:%S')"/>
+    </record>
+
+    <record id="qr_token_demo_ana_expired" model="supreme.qr.token">
+        <field name="partner_id" ref="eloteelsupremo_base.partner_demo_ana"/>
+        <field name="token_type">payment</field>
+        <field name="token">demo-pay-ana-expired</field>
+        <field name="payload">SUPREMO:PAY:DEMO:50:demo-pay-ana-expired</field>
+        <field name="state">expired</field>
+        <field name="amount">50.0</field>
+        <field name="expire_at" eval="(datetime.now() - timedelta(minutes=20)).strftime('%Y-%m-%d %H:%M:%S')"/>
+    </record>
+</odoo>

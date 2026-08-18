@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from odoo import api, fields, models
+from odoo import _, api, fields, models
 
 
 class PosConfig(models.Model):
@@ -46,3 +46,31 @@ class PosConfig(models.Model):
             if fname not in fields:
                 fields.append(fname)
         return fields
+
+    @api.model
+    def _supreme_demo_ensure_spei_payment_method(self):
+        """Crea el método de pago Transferencia SPEI para el ambiente demo."""
+        PosPaymentMethod = self.env['pos.payment.method'].sudo()
+        existing = PosPaymentMethod.search([('name', '=', 'Transferencia SPEI')], limit=1)
+        if existing:
+            method = existing
+        else:
+            journal = self.env['account.journal'].sudo().search([
+                ('type', '=', 'bank'),
+                ('company_id', '=', self.env.company.id),
+            ], limit=1)
+            vals = {
+                'name': _('Transferencia SPEI'),
+                'split_transactions': True,
+            }
+            if journal:
+                vals['journal_id'] = journal.id
+            method = PosPaymentMethod.create(vals)
+
+        configs = self.search([])
+        for config in configs:
+            config.write({
+                'payment_method_ids': [(4, method.id)],
+                'supreme_qr_enabled': True,
+            })
+        return method

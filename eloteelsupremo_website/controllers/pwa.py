@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from odoo import http
+from odoo import _, http
 from odoo.http import request
 
 
@@ -8,11 +8,11 @@ class SupremePwaController(http.Controller):
     @http.route('/eloteelsupremo/manifest.webmanifest', type='http', auth='public', website=True)
     def supreme_manifest(self):
         website = request.website
-        name = website.name or 'Elote El Supremo'
+        name = website.name or _('Elote El Supremo')
         manifest = {
             'name': name,
-            'short_name': 'Banco Supremo',
-            'description': 'Moned Supreme, Puntos Supremos y pagos con QR',
+            'short_name': _('Banco Supremo'),
+            'description': _('Moned Supreme, Puntos Supremos y pagos con QR'),
             'start_url': '/my/banco-supremo',
             'scope': '/',
             'display': 'standalone',

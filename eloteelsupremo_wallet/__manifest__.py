@@ -13,6 +13,10 @@
         'views/supreme_qr_token_views.xml',
         'views/loyalty_card_views.xml',
     ],
+    'demo': [
+        'demo/loyalty_card_demo.xml',
+        'demo/supreme_qr_token_demo.xml',
+    ],
     'installable': True,
     'application': False,
 }

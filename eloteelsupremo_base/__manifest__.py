@@ -34,6 +34,11 @@ Base del ecosistema Elote El Supremo.
         'views/loyalty_program_views.xml',
         'views/eloteelsupremo_menus.xml',
     ],
+    'demo': [
+        'demo/res_partner_demo.xml',
+        'demo/res_users_demo.xml',
+        'demo/product_demo.xml',
+    ],
     'installable': True,
     'application': False,
 }

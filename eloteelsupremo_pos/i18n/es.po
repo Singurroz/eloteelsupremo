@@ -1,0 +1,124 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* eloteelsupremo_pos
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-18 07:00+0000\n"
+"PO-Revision-Date: 2026-08-18 07:00+0000\n"
+"Last-Translator: Elote El Supremo\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#. module: eloteelsupremo_pos
+#: model:ir.module.module,shortdesc:eloteelsupremo_pos.module_eloteelsupremo_pos
+msgid "Elote El Supremo — POS QR"
+msgstr "Elote El Supremo — QR en punto de venta"
+
+#. module: eloteelsupremo_pos
+#: model:ir.module.module,summary:eloteelsupremo_pos.module_eloteelsupremo_pos
+msgid "Escaneo de QR Banco Supremo en punto de venta"
+msgstr "Escaneo de QR Banco Supremo en punto de venta"
+
+#. module: eloteelsupremo_pos
+#: model:ir.model.fields,field_description:eloteelsupremo_pos.field_pos_config__supreme_qr_enabled
+#: model_terms:ir.ui.view,arch_db:eloteelsupremo_pos.pos_config_view_form_supreme
+msgid "QR Banco Supremo"
+msgstr "QR Banco Supremo"
+
+#. module: eloteelsupremo_pos
+#: model:ir.model.fields,help:eloteelsupremo_pos.field_pos_config__supreme_qr_enabled
+msgid "Habilita el escaneo de QR de identificación y pago Moned Supreme."
+msgstr "Habilita el escaneo de QR de identificación y pago Moned Supreme."
+
+#. module: eloteelsupremo_pos
+#: model_terms:ir.ui.view,arch_db:eloteelsupremo_pos.pos_config_view_form_supreme
+msgid "Permite escanear códigos QR de clientes Moned Supreme"
+msgstr "Permite escanear códigos QR de clientes Moned Supreme"
+
+#. module: eloteelsupremo_pos
+#: model:ir.model.fields,field_description:eloteelsupremo_pos.field_pos_config__supreme_payment_discount_percent
+msgid "Descuento Moned Supreme (%)"
+msgstr "Descuento Moned Supreme (%)"
+
+#. module: eloteelsupremo_pos
+#: model:ir.model.fields,field_description:eloteelsupremo_pos.field_pos_config__supreme_payment_points_percent
+msgid "Puntos Moned Supreme (%)"
+msgstr "Puntos Moned Supreme (%)"
+
+#. module: eloteelsupremo_pos
+#: model:ir.model.fields,field_description:eloteelsupremo_pos.field_pos_config__supreme_recharge_bonus_percent
+msgid "Bono recarga (%)"
+msgstr "Bono de recarga (%)"
+
+#. module: eloteelsupremo_pos
+#. odoo-python
+#: code:addons/eloteelsupremo_pos/models/pos_session.py:0
+msgid "QR Banco Supremo deshabilitado en este POS."
+msgstr "QR Banco Supremo deshabilitado en este punto de venta."
+
+#. module: eloteelsupremo_pos
+#. odoo-python
+#: code:addons/eloteelsupremo_pos/models/pos_session.py:0
+msgid "Token no encontrado."
+msgstr "Token no encontrado."
+
+#. module: eloteelsupremo_pos
+#. odoo-python
+#: code:addons/eloteelsupremo_pos/models/pos_session.py:0
+msgid "Token QR no disponible."
+msgstr "Token QR no disponible."
+
+#. module: eloteelsupremo_pos
+#. odoo-python
+#: code:addons/eloteelsupremo_pos/models/pos_config.py:0
+msgid "Transferencia SPEI"
+msgstr "Transferencia SPEI"
+
+#. module: eloteelsupremo_pos
+#. odoo-javascript
+#: code:addons/eloteelsupremo_pos/static/src/app/supreme_pos_store.js:0
+msgid "QR Banco Supremo deshabilitado en este punto de venta."
+msgstr "QR Banco Supremo deshabilitado en este punto de venta."
+
+#. module: eloteelsupremo_pos
+#. odoo-javascript
+#: code:addons/eloteelsupremo_pos/static/src/app/supreme_pos_store.js:0
+msgid "Error al procesar QR."
+msgstr "Error al procesar el QR."
+
+#. module: eloteelsupremo_pos
+#. odoo-javascript
+#: code:addons/eloteelsupremo_pos/static/src/app/supreme_pos_store.js:0
+msgid "QR no válido."
+msgstr "QR no válido."
+
+#. module: eloteelsupremo_pos
+#. odoo-javascript
+#: code:addons/eloteelsupremo_pos/static/src/app/supreme_pos_store.js:0
+msgid "Banco Supremo"
+msgstr "Banco Supremo"
+
+#. module: eloteelsupremo_pos
+#. odoo-javascript
+#: code:addons/eloteelsupremo_pos/static/src/app/supreme_pos_store.js:0
+msgid "No se pudo aplicar Moned Supreme."
+msgstr "No se pudo aplicar Moned Supreme."
+
+#. module: eloteelsupremo_pos
+#. odoo-javascript
+#: code:addons/eloteelsupremo_pos/static/src/app/supreme_pos_store.js:0
+msgid "Programa Moned Supreme no configurado."
+msgstr "Programa Moned Supreme no configurado."
+
+#. module: eloteelsupremo_pos
+#. odoo-javascript
+#: code:addons/eloteelsupremo_pos/static/src/app/supreme_pos_store.js:0
+msgid "El cliente no tiene saldo Moned Supreme disponible."
+msgstr "El cliente no tiene saldo de Moned Supreme disponible."

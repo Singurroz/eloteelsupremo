@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="product_category_elotes" model="product.category">
+        <field name="name">Elotes y esquites</field>
+    </record>
+
+    <record id="product_elote_clasico" model="product.product">
+        <field name="name">Elote clásico</field>
+        <field name="list_price">45.0</field>
+        <field name="type">consu</field>
+        <field name="sale_ok" eval="True"/>
+        <field name="purchase_ok" eval="False"/>
+        <field name="available_in_pos" eval="True"/>
+        <field name="is_published" eval="True"/>
+        <field name="categ_id" ref="product_category_elotes"/>
+        <field name="taxes_id" eval="[(5,)]"/>
+        <field name="description_sale">Elote con mayonesa, queso y chile. Precio demo MXN.</field>
+    </record>
+
+    <record id="product_elote_supremo" model="product.product">
+        <field name="name">Elote Supremo</field>
+        <field name="list_price">65.0</field>
+        <field name="type">consu</field>
+        <field name="sale_ok" eval="True"/>
+        <field name="purchase_ok" eval="False"/>
+        <field name="available_in_pos" eval="True"/>
+        <field name="is_published" eval="True"/>
+        <field name="categ_id" ref="product_category_elotes"/>
+        <field name="taxes_id" eval="[(5,)]"/>
+        <field name="description_sale">Elote especial de la casa con toppings extra.</field>
+    </record>
+
+    <record id="product_esquite" model="product.product">
+        <field name="name">Esquite</field>
+        <field name="list_price">50.0</field>
+        <field name="type">consu</field>
+        <field name="sale_ok" eval="True"/>
+        <field name="purchase_ok" eval="False"/>
+        <field name="available_in_pos" eval="True"/>
+        <field name="is_published" eval="True"/>
+        <field name="categ_id" ref="product_category_elotes"/>
+        <field name="taxes_id" eval="[(5,)]"/>
+        <field name="description_sale">Esquite en vaso con queso, mayonesa y limón.</field>
+    </record>
+
+    <record id="product_agua_jamaica" model="product.product">
+        <field name="name">Agua de jamaica</field>
+        <field name="list_price">25.0</field>
+        <field name="type">consu</field>
+        <field name="sale_ok" eval="True"/>
+        <field name="purchase_ok" eval="False"/>
+        <field name="available_in_pos" eval="True"/>
+        <field name="is_published" eval="True"/>
+        <field name="categ_id" ref="product_category_elotes"/>
+        <field name="taxes_id" eval="[(5,)]"/>
+        <field name="description_sale">Agua fresca de jamaica, 500 ml.</field>
+    </record>
+
+    <record id="product_recharge_moned_supreme" model="product.product">
+        <field name="is_published" eval="True"/>
+        <field name="website_sequence">10</field>
+    </record>
+</odoo>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <function model="pos.config" name="_supreme_demo_ensure_spei_payment_method" eval="[]"/>
+</odoo>

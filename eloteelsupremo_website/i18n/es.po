@@ -1,0 +1,117 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* eloteelsupremo_website
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-18 07:00+0000\n"
+"PO-Revision-Date: 2026-08-18 07:00+0000\n"
+"Last-Translator: Elote El Supremo\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#. module: eloteelsupremo_website
+#: model:ir.module.module,shortdesc:eloteelsupremo_website.module_eloteelsupremo_website
+msgid "Elote El Supremo — Portal Web"
+msgstr "Elote El Supremo — Portal web"
+
+#. module: eloteelsupremo_website
+#: model:ir.module.module,summary:eloteelsupremo_website.module_eloteelsupremo_website
+msgid "Portal del cliente: saldo Moned Supreme, QR identificación y pago"
+msgstr "Portal del cliente: saldo Moned Supreme, QR de identificación y pago"
+
+#. module: eloteelsupremo_website
+#: model_terms:ir.ui.view,arch_db:eloteelsupremo_website.portal_my_home_supreme
+#: model_terms:ir.ui.view,arch_db:eloteelsupremo_website.portal_banco_supremo
+#. odoo-python
+#: code:addons/eloteelsupremo_website/controllers/pwa.py:0
+msgid "Banco Supremo"
+msgstr "Banco Supremo"
+
+#. module: eloteelsupremo_website
+#: model_terms:ir.ui.view,arch_db:eloteelsupremo_website.portal_my_home_supreme
+msgid "Moned Supreme, Puntos Supremos y QR de pago"
+msgstr "Moned Supreme, Puntos Supremos y QR de pago"
+
+#. module: eloteelsupremo_website
+#: model_terms:ir.ui.view,arch_db:eloteelsupremo_website.portal_banco_supremo
+msgid "Moned Supreme"
+msgstr "Moned Supreme"
+
+#. module: eloteelsupremo_website
+#: model_terms:ir.ui.view,arch_db:eloteelsupremo_website.portal_banco_supremo
+msgid "Puntos Supremos"
+msgstr "Puntos Supremos"
+
+#. module: eloteelsupremo_website
+#: model_terms:ir.ui.view,arch_db:eloteelsupremo_website.portal_banco_supremo
+msgid "QR de identificación"
+msgstr "QR de identificación"
+
+#. module: eloteelsupremo_website
+#: model_terms:ir.ui.view,arch_db:eloteelsupremo_website.portal_banco_supremo
+msgid "Muéstralo al llegar a la sucursal para identificarte."
+msgstr "Muéstralo al llegar a la sucursal para identificarte."
+
+#. module: eloteelsupremo_website
+#: model_terms:ir.ui.view,arch_db:eloteelsupremo_website.portal_banco_supremo
+msgid "QR de pago"
+msgstr "QR de pago"
+
+#. module: eloteelsupremo_website
+#: model_terms:ir.ui.view,arch_db:eloteelsupremo_website.portal_banco_supremo
+msgid "Monto a pagar"
+msgstr "Monto a pagar"
+
+#. module: eloteelsupremo_website
+#: model_terms:ir.ui.view,arch_db:eloteelsupremo_website.portal_banco_supremo
+msgid "Generar QR"
+msgstr "Generar QR"
+
+#. module: eloteelsupremo_website
+#. odoo-python
+#: code:addons/eloteelsupremo_website/controllers/pwa.py:0
+msgid "Elote El Supremo"
+msgstr "Elote El Supremo"
+
+#. module: eloteelsupremo_website
+#. odoo-python
+#: code:addons/eloteelsupremo_website/controllers/pwa.py:0
+msgid "Moned Supreme, Puntos Supremos y pagos con QR"
+msgstr "Moned Supreme, Puntos Supremos y pagos con QR"
+
+#. module: eloteelsupremo_website
+#. odoo-javascript
+#: code:addons/eloteelsupremo_website/static/src/js/supreme_portal.js:0
+msgid "QR Banco Supremo"
+msgstr "QR Banco Supremo"
+
+#. module: eloteelsupremo_website
+#. odoo-javascript
+#: code:addons/eloteelsupremo_website/static/src/js/supreme_portal.js:0
+msgid "Escanea con la caja Elote El Supremo"
+msgstr "Escanea con la caja Elote El Supremo"
+
+#. module: eloteelsupremo_website
+#. odoo-javascript
+#: code:addons/eloteelsupremo_website/static/src/js/supreme_portal.js:0
+msgid "Ingresa un monto válido."
+msgstr "Ingresa un monto válido."
+
+#. module: eloteelsupremo_website
+#. odoo-javascript
+#: code:addons/eloteelsupremo_website/static/src/js/supreme_portal.js:0
+msgid "No se pudo generar el QR."
+msgstr "No se pudo generar el QR."
+
+#. module: eloteelsupremo_website
+#. odoo-javascript
+#: code:addons/eloteelsupremo_website/static/src/js/supreme_portal.js:0
+msgid "Válido hasta: %s"
+msgstr "Válido hasta: %s"
